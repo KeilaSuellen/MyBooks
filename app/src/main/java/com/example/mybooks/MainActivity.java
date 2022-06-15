@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
         ListaLivros.hasFixedSize();
 
         //carregar o adaptador ao RecylerView
-        ListaLivros.setAdapter();
+        //ListaLivros.setAdapter();
     }
 }
