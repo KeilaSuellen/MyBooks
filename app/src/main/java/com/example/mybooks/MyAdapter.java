@@ -1,12 +1,26 @@
 package com.example.mybooks;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+
+    private Context context;
+    private List<Books> books;
+
+    public MyAdapter() {
+    }
+
+    public MyAdapter(Context context, List<Books> books) {
+        this.context = context;
+        this.books = books;
+    }
 
     @NonNull
     @Override
